@@ -3,11 +3,11 @@ function scriptLoad() {
 }
 
 function addition() {
-var num1 = 5;
-var num2 = 6;
-var num3 = num1 + num2;
+  var num1 = 5;
+  var num2 = 6;
+  var num3 = num1 + num2;
 
-alert(num3);
+  alert(num3);
 }
 
 
@@ -24,16 +24,34 @@ print5();
 print5();
 
 function myClickFunction() {
-var element = document.getElementById('pageheading');
-element.firstChild.nodeValue = 'New Heading';
+  var element = document.getElementById('pageheading');
+  element.firstChild.nodeValue = 'New Heading';
+  var element = document.getElementById('myinput');
+  var div = document.getElementById('result');
+  div.firstChild.nodeValue = element.value;
+}
 
-var element = document.getElementById('paragraph');
-element.firstChild.nodeValue = 'New Paragraph Text';
+function updateP() {
+  var element = document.getElementById('paragraph');
+  element.firstChild.nodeValue = 'New Paragraph Text';
 }
 
 function myLoadFunction() {
-var element = document.getElementById('pageheading');
-element.addEventListener('click' , myClickFunction);
+  var element = document.getElementById('pageheading');
+  element.addEventListener('click', myClickFunction);
+
+  var element = document.getElementById('paragraph');
+  element.addEventListener('click', updateP);
+
+var element = document.getElementById('mybutton');
+element.addEventListener('click', myClickFunction);
+
 }
 
-document.addEventListener('DOMContentLoaded' , myLoadFunction);
+
+document.addEventListener('DOMContentLoaded', myLoadFunction);
+
+function displayName() {
+  var element = document.getElementById('myinput');
+  alert(element.value);
+}
