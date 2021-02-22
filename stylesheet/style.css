@@ -1,0 +1,49 @@
+ .part1 h2 {
+            color:red;
+          }
+.part1 p{
+    background-color: black;
+    color:white;
+    display: inline;
+}
+
+.part2 h2 {
+  color:green;
+}
+
+.part2 p{
+  background-color: darkred;
+  color:green;
+  display: inline;
+}
+
+p{
+  color: green;
+}
+
+.part4 div p{
+  color: black;
+}
+
+.csym019 {
+  font-family: Verdana;
+  display: block;
+  width: 50%;
+  float: left;
+  background-color: #0ca39a;
+  margin: auto;
+}
+
+.csym019 p{
+  color: black;
+}
+
+.csym015 {
+  font-family: Helvetica;
+  display: block;
+  width: 50%;
+  float: right;
+  background-color: yellow;
+  margin: auto;
+
+}
